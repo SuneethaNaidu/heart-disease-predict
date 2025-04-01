@@ -13,7 +13,7 @@ MAX_HR= st.number_input('Enter max hr')
 Exercise_agina = st.number_input('Enter exercise agina(Y:1,N:0)')
 ST_depression= st.number_input('Enter st depression')
 Slope_of_ST= st.number_input('Enter slope of st')
-Number_of_vessels_fluro= st.number_input('Enter no of vesselsfluro')
+Number_of_vesselsfluro= st.number_input('Enter no of vesselsfluro')
 Thallium= st.number_input('Enter thallium percentage')
 if st.button('Predict Heart Disease'):
     prediction=model.predict([[Age,Sex,chest_paintype,BP,Cholesterol,FBS,EKG_results,MAX_HR,Exercise_agina,ST_depression,Slope_of_ST,Number_of_vesselsfluro,Thallium]])
